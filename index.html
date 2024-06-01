@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-screen">
+            <div class="header">
+                <div class="coins-info">
+                    <span>Монет за тап: <span id="tap-coins">+1</span></span>
+                    <span>Монет для нового рівня: <span id="level-coins">5K</span></span>
+                    <span>Монет за тренування: <span id="training-coins">+1K</span></span>
+                </div>
+                <div class="coin-display">
+                    <span id="total-coins">2 517</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div class="character">
+                <img src="images/character.png" alt="Character">
+            </div>
+            <div class="buttons">
+                <button id="start-training">Почати тренування</button>
+            </div>
+        </div>
+        <div class="equipment-screen">
+            <div class="equipment">
+                <!-- Equipment items -->
+                <!-- Example for one item, repeat for all items -->
+                <div class="item" data-cost="10000" data-bonus="3000">
+                    <img src="images/kettlebell.png" alt="Kettlebell">
+                    <span>Гиря</span>
+                    <span>+3K Монет за тренування</span>
+                    <span>10K</span>
+                </div>
+            </div>
+        </div>
+        <div class="friends-screen">
+            <div class="invite-friends">
+                <button id="invite-friends">Запросіть друга!</button>
+            </div>
+            <div class="friends-list">
+                <!-- Friends list will be here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
